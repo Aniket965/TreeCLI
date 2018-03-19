@@ -113,6 +113,3 @@ extension TreeNode where T: Equatable {
         return nil
     }
 }
-
-let tree = TreeCLI(filepaths: ["cute/hello/hello.py","maths/maths.py","h.py","klol/lol/hello/h.py"])
-print(tree.getTree())

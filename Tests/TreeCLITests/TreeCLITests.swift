@@ -3,10 +3,8 @@ import XCTest
 
 class TreeCLITests: XCTestCase {
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(TreeCLI().text, "Hello, World!")
+        let cli = TreeCLI(filepaths: ["h.py"])
+        XCTAssertEqual(cli.getTree(),"FileStructure\n├─h.py")
     }
 
 
